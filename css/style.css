@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: 0;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Quicksand', sans-serif;
+}
+
+:root {
+    --bg-color: #fdfdfd;
+    --text-color: #333;
+    --main-color: purple;
+    --white-color: #fdfdfd;
+    --shadow-color: rgba(0, 0, 0, .2);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 7%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo-nome {
+    font-size: 2.5rem;
+    color: var(--main-color);
+    font-weight: 600;
+    cursor: default;
+    margin-right: auto;
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    position:relative;
+    color: var(--white-color);
+    font-weight: 500;
+    margin-right: 3.5rem;
+}
+
+.navbar a.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: .2rem;
+    background: var(--white-color);
+}
+
+#darkMode-icon {
+    cursor: pointer;
+    color: var(--white-color);
+    font-size: 2.4rem;
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 7% 2rem;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+}
+
+.home .home-title {
+    max-width: 44rem;
+}
+
+.home-title h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: .3rem;
+}
+
+.home-title h2 {
+    font-size: 2rem;
+}
+
+.home-title h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: .3;
+    margin: 1rem 1rem 1rem 0;
+}
+
+.home-title p {
+    font-size: 1.8rem;
+    margin: 1rem 1rem 1rem 0;
+}
+
+.home-title .social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    box-shadow: 0 .2rem .5rem var(--shadow-color);
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 2.5rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.home-title .social-media a:hover{
+    background: var(--main-color);
+    color: var(--white-color);
+}
+
+span {
+    display: inline-block;
+    padding: 1.2rem 2.8rem;
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    box-shadow: 0 .2rem .5rem var(--shadow-color);
+    font-size: 1.4rem;
+    color: var(--white-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    border: .2rem solid transparent;
+    transition: .5s ease;
+}
+
+span:hover {
+    background: transparent;
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgb(0, 0, 0);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.home .skills-container{
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-45%);
+    width: 768px;
+    height: 768px;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.home .skills-container .skills-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 769px;
+    height: 768px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .skills-box .skills {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--main-color);
+    transform: rotate(calc(360deg / 4 * var(--i)));
+    transform-origin: 384px;
+    background: var(--bg-color);
+    padding: 13px 0;
+}
+
+.home .skills-box .skills:nth-child(1) i {
+    margin-right: 15px;
+}
+
+.home .skills-box .skills:nth-child(2),
+.home .skills-box .skills:nth-child(4){
+    padding-bottom: 20px;
+}
+
+.home .skills i {
+    font-size: 3.8rem;
+}
+
+.home .skills h3 {
+    font-size: 3.2rem;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.home .skills-box .circle{
+    width: 560px;
+    height: 560px;
+    border: 3px solid var(--main-color);
+    border-radius: 50%;
+}
+
+.home .skills-container .overlay {
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 384px solid var(--main-color);
+    border-right: 384px solid var(--main-color);
+    border-bottom: 384px solid var(--main-color);
+    border-left: 384px solid transparent;
+    
+}
+
+.home-img img{
+    position: absolute;
+    padding-bottom: 12rem;
+    padding-right: 1rem;
+    bottom: 3px;
+    right: 1px;
+    pointer-events: none;
+}
