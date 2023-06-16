@@ -113,25 +113,26 @@ section {
 
 .home-title h2 {
     font-size: 2rem;
+    margin: 1rem;
 }
 
 .home-title h3 {
     font-size: 2rem;
     font-weight: 700;
     line-height: .3;
-    margin: 1rem 1rem 1rem 0;
+    margin: 2rem 2rem 1rem 0;
 }
 
 .home-title p {
     font-size: 1.8rem;
-    margin: 1rem 1rem 1rem 0;
+    margin: 2rem 2rem 1rem 0;
 }
 
 .home-title .social-media {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2.5rem 1.5rem 3rem 0;
+    margin: 2.5rem 2.5rem 2.5rem 2.5rem;
 }
 
 .home-title .social-media a {
@@ -146,8 +147,8 @@ section {
     box-shadow: 0 .2rem .5rem var(--shadow-color);
     font-size: 2rem;
     color: var(--main-color);
-    margin-right: 1.5rem;
-    transition: .5s ease;
+    margin: 0.5rem;
+    transition: 0.5s ease;
 }
 
 .home-title .social-media a:hover {
@@ -167,13 +168,19 @@ span {
     letter-spacing: .1rem;
     font-weight: 600;
     border: .2rem solid transparent;
-    transition: .5s ease;
+    transition: 1s ease;
 }
 
 span:hover {
     background: transparent;
     color: var(--main-color);
     border-color: var(--main-color);
+}
+
+.dropdown-container {
+    display: flex;
+    align-items: center;
+    
 }
 
 .dropdown {
@@ -205,6 +212,7 @@ span:hover {
 .dropdown-content a:hover {
     background-color: #f1f1f1;
 }
+
 
 .about {
     background: var(--main-color);
