@@ -80,7 +80,7 @@
 
     <!-- Sessão sobre mim -->
     <section class="about" id="about">
-        <div>
+        <div class="about-box">
             <h3>Sobre mim</h3>
             <p>Brasileira, 28 anos, entusiasta por tecnologia e apaixonada por Desenvolvimento Web Full Stack,
                 sou estudante de Análise e Desenvolvimento de Sistemas e tenho me dedicado a aprimorar minhas
@@ -98,110 +98,97 @@
         </div>
     </section>
 
-    <div class="skills-container" id="skills">
-        <h3>Skills</h3>
+    <section class="skills-container" id="skills">
+        <h3 class="titulos">Skills</h3>
         <div class="skills-box">
             <div class="skills">
-                <img src="/assets/html.png">
+                <img src="/assets/html.png" alt="html">
                 <h4>HTML5</h4>
             </div>
             <div class="skills">
-                <img src="/assets/css-3.png">
+                <img src="/assets/css-3.png" alt="css">
                 <h4>CSS3</h4>
             </div>
             <div class="skills">
-                <img src="/assets/js.png">
+                <img src="/assets/js.png" alt="js">
                 <h4>JavaScript</h4>
             </div>
             <div class="skills">
-                <img src="/assets/react.png">
-                <h4>React</h4>
-            </div>
-            <div class="skills">
-                <img src="/assets/nodejs.png">
-                <h4>Node.js</h4>
-            </div>
-            <div class="skills">
-                <img src="/assets/bootstrap.png">
+                <img src="/assets/bootstrap.png" alt="bootstrap">
                 <h4>Bootstrap</h4>
             </div>
             <div class="skills">
-                <img src="/assets/mysql.png">
+                <img src="/assets/react.png" alt="react">
+                <h4>React</h4>
+            </div>
+            <div class="skills">
+                <img src="/assets/mysql.png" alt="mysql">
                 <h4>MySql</h4>
             </div>
+            <div class="skills">
+                <img src="/assets/git.png" alt="git">
+                <h4>Git</h4>
+            </div>
+            <div class="skills">
+                <img src="/assets/github.png" alt="github">
+                <h4>Github</h4>
+            </div>
         </div>
-    </div>
+    </section>
 
     <!-- Sessão de Hobbies -->
-    <section class="hobbies" id="hobbies">
-        <h3 class="hobbies__title">Hobbies</h3>
-        <div class="hobbies__line">
-            <div class="hobbies__box">
-                <ul>
-                    <li class="hobbies__img"><img src="assets\skate_icon.png"></li>
-                    <li class="hobbies__name">Leitura</li>
-                </ul>
+    
+    <section class="hobbies-container" id="hobbies">
+        <h3 class="titulos">Hobbies</h3>
+        <div class="hobbies-box">
+            <div class="hobbies-item">
+                <img src="assets/books.png" alt="books">
+                <h4>Leitura</h4>
             </div>
 
-            <div class="hobbies__box">
-                <ul>
-                    <li class="hobbies__img"> <img src="assets\guitar_icon.png" alt=""></li>
-                    <li class="hobbies__name">Ilustração</li>
-                </ul>
+            <div class="hobbies-item">
+                <img src="/assets/drawing.png" alt="drawing">
+                <h4>Ilustração</h4>
             </div>
 
-            <div class="hobbies__box">
-                <ul>
-                    <li class="hobbies__img"> <img src="assets\headphones_icon.png" alt=""></li>
-                    <li class="hobbies__name">Xadrez</li>
-                </ul>
+            <div class="hobbies-item">
+                <img src="/assets/chess.png" alt="chess">
+                <h4>Xadrez</h4>
             </div>
 
-            <div class="hobbies__box">
-                <ul>
-                    <li class="hobbies__img"><img src="assets\tv_icon.png" alt=""></li>
-                    <li class="hobbies__name">Culinária</li>
-                </ul>
+            <div class="hobbies-item">
+                <img src="assets/cooking.png" alt="cooking">
+                <h4>Culinária</h4>
             </div>
 
-            <div class="hobbies__box">
-                <ul>
-                    <li class="hobbies__img"> <img src="assets\forkspoon_icon.png" alt=""> </li>
-                    <li class="hobbies__name">Tecido Acrobático</li>
-                </ul>
+            <div class="hobbies-item">
+                <img src="/assets/bike.png" alt="bike">
+                <h4>Ciclismo</h4>
             </div>
 
+            <div class="hobbies-item">
+                <img src="/assets/aerialist.png" alt="aerialist">
+                <h4>Tecido Acrobático</h4>
+            </div>
         </div>
     </section>
 
     <!-- Sessão de Histórico Acadêmico -->
-    <section class="academic">
-        <h2 class="academic__title" id="academic">Formação acadêmica</h2>
-        <div class="academic__courses">
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Insira a logo de seu local de formação -->
-                    <li class="academic__courses__item__img"><img src="/assets/estacio.jpg"></li>
-                    <li class="academic__courses__item__title">
-                        <h4>Análise e Desenvolmento de Sistemas</h4>
-                    </li>
-                    <li class="academic__courses__item__subtitle">
-                        <p>Em andamento</p>
-                        <p>Centro Universitário Estácio de Sá Recife</p>
-                    </li>
-                </ul>
+    <section class="academic" id="academic">
+        <h2>Formação acadêmica</h2>
+        <div class="academic-box">
+            <div>
+                <img src="/assets/estacio.jpg" alt="estacio">
+                <h4>Análise e Desenvolmento de Sistemas</h4>
+                <p>Em andamento</p>
+                <p>Centro Universitário Estácio de Sá Recife</p>
             </div>
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Insira a logo de seu local de formação -->
-                    <li class="academic__courses__item__img"><img src="/assets/recode.jpg"></li>
-                    <li class="academic__courses__item__title">
-                        <h4>Desenvolvedor Web Full Stack</h4>
-                    </li>
-                    <li class="academic__courses__item__subtitle">
-                        <p>2022 - Recode Pro</p>
-                    </li>
-                </ul>
+        
+            <div>
+                <img src="/assets/recode.jpg" alt="recode">
+                <h4>Desenvolvimento Web Full Stack</h4>
+                <p>2022</p>
+                <p>Recode Pro</p>
             </div>
         </div>
     </section>
@@ -211,7 +198,7 @@
         <h2>Projetos</h2>
         <div class="experiencie-box">
             <!-- Insira a logo/captura de seu projeto/trabalho -->
-            <img src="assets/calculatorproject.png">
+            <img src="assets/calculatorproject.png" alt="calculadora">
             <div>
                 <h2>Calculadora Themes</h2>
                 <h3>Projeto de calculadora usando React, Vite e Typescript</h3>
@@ -228,7 +215,7 @@
 
         <div class="experiencie__box">
             <!-- Insira a logo de seu projeto/trabalho -->
-            <img src="/assets/clone_netflix.png">
+            <img src="/assets/clone_netflix.png" alt="clone-netflix">
             <div>
                 <h2>Clone Netflix para consumir uma API</h2>
                 <h3>Tecnologias: Node.js, HTML, CSS e Javascript</h3>
@@ -245,7 +232,7 @@
 
         <div class="experiencie__box">
             <!-- Insira a logo de seu projeto/trabalho -->
-            <img src="/assets/tropicaltravel_firstproject.png">
+            <img src="/assets/tropicaltravel_firstproject.png" alt="tropical-travel">
             <div>
                 <h2>Agencia de Viagens Tropical Travel</h2>
                 <h3>Challenge Recode Pro, meu primeiro website</h3>
