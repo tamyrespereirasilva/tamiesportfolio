@@ -28,12 +28,12 @@
         <h3 class="logo-nome">Tamyres Silva</h3>
 
         <nav class="navbar">
-            <a href="#sobremim" class="active">Sobre mim</a>
+            <a href="#about">Sobre mim</a>
             <a href="#skills">Skills</a>
             <a href="#hobbies">Hobbies</a>
-            <a href="#formacao">Formação</a>
+            <a href="#academic">Formação</a>
             <a href="#xp">Projetos</a>
-            <a href="#contato">tamyrestn88@gmail.com</a>
+            <a href="#contact">tamyrestn88@gmail.com</a>
         </nav>
 
         <div class="bx bx-moon" id="darkMode-icon"></div>
@@ -41,7 +41,7 @@
     </header>
 
 
-    <section class="home" id="sobremim">
+    <section class="home">
 
         <div class="home-title">
             <h3>Hello World!</h3>
@@ -69,44 +69,23 @@
             </div>
         </div>
 
-        <div class="skills-container" id="skills">
-            <div class="skills-box">
-                <div class="skills" style="--i:0;">
-                    <i class='bx bxl-html5'></i>
-                    <h4>HTML5</h4>
-                </div>
-                <div class="skills" style="--i:1;">
-                    <i class='bx bxl-css3' ></i>
-                    <h4>CSS3</h4>
-                </div>
-                <div class="skills" style="--i:2;">
-                    <i class='bx bxl-javascript'></i>
-                    <h4>JavaScript</h4>
-                </div>
-                <div class="skills" style="--i:3;">
-                    <i class='bx bxl-react'></i>
-                    <h4>React</h4>
-                </div>
-
-                <div class="circle"></div>
-            </div>
-
-            <div class="overlay"></div>
-        </div>
 
         <div class="home-img">
             <img src="/assets/profile.png" alt="profile">
         </div>
+
+
+
     </section>
 
     <!-- Sessão sobre mim -->
-    <section class="about">
-        <div class="about__container">
-            <h3 class="about__title" id="sobremim">Sobre mim</h3>
-            <p class="about__paragraph">Entusiasta por tecnologia e apaixonada por Desenvolvimento Web Full Stack,
+    <section class="about" id="about">
+        <div>
+            <h3>Sobre mim</h3>
+            <p>Brasileira, 28 anos, entusiasta por tecnologia e apaixonada por Desenvolvimento Web Full Stack,
                 sou estudante de Análise e Desenvolvimento de Sistemas e tenho me dedicado a aprimorar minhas
                 habilidades
-                nessa área em constante evolução. Sou reconhecida por minha criatividade, persistência, organização
+                no Desenvolvimento Front End. Sou reconhecida por minha criatividade, persistência, organização
                 e responsabilidade.
                 <br><br>
                 Uma das minhas principais habilidades é o aprendizado rápido, o que me permite assimilar novos
@@ -118,7 +97,40 @@
             <img src="assets\signature.png">
         </div>
     </section>
-   
+
+    <div class="skills-container" id="skills">
+        <h3>Skills</h3>
+        <div class="skills-box">
+            <div class="skills">
+                <img src="/assets/html.png">
+                <h4>HTML5</h4>
+            </div>
+            <div class="skills">
+                <img src="/assets/css-3.png">
+                <h4>CSS3</h4>
+            </div>
+            <div class="skills">
+                <img src="/assets/js.png">
+                <h4>JavaScript</h4>
+            </div>
+            <div class="skills">
+                <img src="/assets/react.png">
+                <h4>React</h4>
+            </div>
+            <div class="skills">
+                <img src="/assets/nodejs.png">
+                <h4>Node.js</h4>
+            </div>
+            <div class="skills">
+                <img src="/assets/bootstrap.png">
+                <h4>Bootstrap</h4>
+            </div>
+            <div class="skills">
+                <img src="/assets/mysql.png">
+                <h4>MySql</h4>
+            </div>
+        </div>
+    </div>
 
     <!-- Sessão de Hobbies -->
     <section class="hobbies" id="hobbies">
@@ -164,7 +176,7 @@
 
     <!-- Sessão de Histórico Acadêmico -->
     <section class="academic">
-        <h2 class="academic__title" id="formacao">Formação acadêmica</h2>
+        <h2 class="academic__title" id="academic">Formação acadêmica</h2>
         <div class="academic__courses">
             <div class="academic__courses__box">
                 <ul class="academic__courses__list">
@@ -195,21 +207,20 @@
     </section>
 
     <!-- Sessão de Experiência Profissional/Projetos-->
-    <section class="experience">
-        <h2 class="experience__section__title" id="xp">Projetos</h2>
-        <div class="experiencie__box">
+    <section class="experience" id="xp">
+        <h2>Projetos</h2>
+        <div class="experiencie-box">
             <!-- Insira a logo/captura de seu projeto/trabalho -->
-            <img class="experience__img" src="assets/calculatorproject.png">
-            <div class="experience__info">
-                <h2 class="experience__title">Calculadora Themes</h2>
-                <h3 class="experience__text">Projeto de calculadora usando React, Vite e Typescript</h3>
-                <div class="experience__description">
+            <img src="assets/calculatorproject.png">
+            <div>
+                <h2>Calculadora Themes</h2>
+                <h3>Projeto de calculadora usando React, Vite e Typescript</h3>
+                <div>
                     <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                    <span class="experience__repo"><a href="https://github.com/tamyrespereirasilva/calculadora"
-                            target="_blank"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                    <span class="experience__demo"><a
-                            href="https://www.linkedin.com/posts/tamyrespereirasilva_por-aqui-seguimos-com-os-estudos-em-react-activity-7019418349012946944-WJEx?utm_source=share&utm_medium=member_desktop"
-                            target="_blank"><button class="experiencia__botao--demo">Ver
+                    <span><a href="https://github.com/tamyrespereirasilva/calculadora"
+                            target="_blank"><button>Repositório</button></a></span>
+                    <span><a href="https://www.linkedin.com/posts/tamyrespereirasilva_por-aqui-seguimos-com-os-estudos-em-react-activity-7019418349012946944-WJEx?utm_source=share&utm_medium=member_desktop"
+                            target="_blank"><button>Ver
                                 demo</button></a></span>
                 </div>
             </div>
@@ -217,35 +228,16 @@
 
         <div class="experiencie__box">
             <!-- Insira a logo de seu projeto/trabalho -->
-            <img class="experience__img" src="/assets/clone_netflix.png">
-            <div class="experience__info">
-                <h2 class="experience__title">Clone Netflix para consumir uma API</h2>
-                <h3 class="experience__text">Tecnologias: Node.js, HTML, CSS e Javascript</h3>
-                <div class="experience__description">
+            <img src="/assets/clone_netflix.png">
+            <div>
+                <h2>Clone Netflix para consumir uma API</h2>
+                <h3>Tecnologias: Node.js, HTML, CSS e Javascript</h3>
+                <div>
                     <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                    <span class="experience__repo"><a href="https://github.com/tamyrespereirasilva/clone-netflix"
-                            target="_blank"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                    <span class="experience__demo"><a
-                            href="https://www.linkedin.com/posts/tamyrespereirasilva_aquele-clone-cl%C3%A1ssico-da-netflix-consumindo-activity-7011104230115553280-cG7L?utm_source=share&utm_medium=member_desktop"
-                            target="_blank"><button class="experiencia__botao--demo">Ver
-                                demo</button></a></span>
-                </div>
-            </div>
-        </div>
-
-        <div class="experiencie__box">
-            <!-- Insira a logo/captura de seu projeto/trabalho -->
-            <img class="experience__img" src="/assets/crud_api.png">
-            <div class="experience__info">
-                <h2 class="experience__title">CRUD API com NodeJs e MongoDB + Mongoose</h2>
-                <h3 class="experience__text">Crud de produtos para estudos em API</h3>
-                <div class="experience__description">
-                    <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                    <span class="experience__repo"><a href="https://github.com/tamyrespereirasilva/crud-produtos"
-                            target="_blank"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                    <span class="experience__demo"><a
-                            href="https://www.linkedin.com/posts/tamyrespereirasilva_crud-api-com-nodejs-e-mongodb-mongoose-activity-7019011232070283266-bJLe?utm_source=share&utm_medium=member_desktop"
-                            target="_blank"><button class="experiencia__botao--demo">Ver
+                    <span><a href="https://github.com/tamyrespereirasilva/clone-netflix"
+                            target="_blank"><button>Repositório</button></a></span>
+                    <span><a href="https://www.linkedin.com/posts/tamyrespereirasilva_aquele-clone-cl%C3%A1ssico-da-netflix-consumindo-activity-7011104230115553280-cG7L?utm_source=share&utm_medium=member_desktop"
+                            target="_blank"><button>Ver
                                 demo</button></a></span>
                 </div>
             </div>
@@ -253,17 +245,16 @@
 
         <div class="experiencie__box">
             <!-- Insira a logo de seu projeto/trabalho -->
-            <img class="experience__img" src="/assets/tropicaltravel_firstproject.png">
-            <div class="experience__info">
-                <h2 class="experience__title">Agencia de Viagens Tropical Travel</h2>
-                <h3 class="experience__text">Challenge Recode Pro, meu primeiro website</h3>
-                <div class="experience__description">
+            <img src="/assets/tropicaltravel_firstproject.png">
+            <div>
+                <h2>Agencia de Viagens Tropical Travel</h2>
+                <h3>Challenge Recode Pro, meu primeiro website</h3>
+                <div>
                     <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                    <span class="experience__repo"><a href="https://github.com/tamyrespereirasilva/entrega-modulo4"
-                            target="_blank"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                    <span class="experience__demo"><a
-                            href="https://www.linkedin.com/posts/tamyrespereirasilva_html-css-bootstrap-activity-6971611114505711616-FKr0?utm_source=share&utm_medium=member_desktop"
-                            target="_blank"><button class="experiencia__botao--demo">Ver
+                    <span><a href="https://github.com/tamyrespereirasilva/entrega-modulo4"
+                            target="_blank"><button>Repositório</button></a></span>
+                    <span><a href="https://www.linkedin.com/posts/tamyrespereirasilva_html-css-bootstrap-activity-6971611114505711616-FKr0?utm_source=share&utm_medium=member_desktop"
+                            target="_blank"><button>Ver
                                 demo</button></a></span>
                 </div>
             </div>
@@ -271,30 +262,24 @@
 
 
         <!-- Sessão de Contato -->
-        <section class="formcontato">
-            <div id="contato" class="formcontato__contacto">
-                <div class="formcontato--esquerda">
-                    <img class="formcontato__img" src="">
-                </div>
-                <div class="formcontato__text">
-                    <h2 class="formcontato__title">Contato</h2>
-                    <h3 class="formcontato__subtext">Quer entrar em contato comigo?</h3>
-                    <h3 class="formcontato__subtext">Preencha o formulário ao lado e entrarei em contato em breve.</h3>
-                    <form class="formcontato__form">
-                        <input class="formcontato__input" type="text" id="nome" placeholder="Nome">
-                        <input class="formcontato__input" type="email" id="email" placeholder="Email">
-                        <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto">
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem"
-                            placeholder="Sua mensagem"></textarea>
-                        <button class="formcontato__botao">Enviar mensagem</button>
-                    </form>
-                </div>
+        <section class="contact" id="contact">
+            <div class="contact-box">
+                <h2>Contato</h2>
+                <h3>Quer entrar em contato comigo?</h3>
+                <h3>Preencha o formulário ao lado e entrarei em contato em breve.</h3>
+                <form>
+                    <input type="text" id="nome" placeholder="Nome">
+                    <input type="email" id="email" placeholder="Email">
+                    <input type="text" id="assunto" placeholder="Assunto">
+                    <textarea rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
+                    <button>Enviar mensagem</button>
+                </form>
             </div>
         </section>
 
         <!-- Sessão de Footer/Rodapé-->
         <section class="footer">
-            <div class="footer__rodape">
+            <div>
                 <p>Desenvolvido por Tamyres Silva</p>
                 <p>2023</p>
             </div>

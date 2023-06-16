@@ -9,12 +9,13 @@
     outline: none;
     scroll-behavior: smooth;
     font-family: 'Quicksand', sans-serif;
+    
 }
 
 :root {
     --bg-color: #fdfdfd;
     --text-color: #333;
-    --main-color: purple;
+    --main-color: #ff8741;
     --white-color: #fdfdfd;
     --shadow-color: rgba(0, 0, 0, .2);
 }
@@ -42,7 +43,7 @@ body {
 }
 
 .logo-nome {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--main-color);
     font-weight: 600;
     cursor: default;
@@ -51,15 +52,16 @@ body {
 
 .navbar a {
     font-size: 1.7rem;
-    position:relative;
-    color: var(--white-color);
+    position: relative;
+    color: var(--main-color);
     font-weight: 500;
-    margin-right: 3.5rem;
+    margin-right: 3rem;
 }
 
 .navbar a.active::before {
     content: '';
-    position: absolute;
+    position: fixed;
+    top: 0;
     left: 0;
     bottom: -6px;
     width: 100%;
@@ -74,17 +76,33 @@ body {
 }
 
 section {
-    min-height: 100vh;
+    min-height: 80vh;
     padding: 10rem 7% 2rem;
 }
 
 .home {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-around;
+    margin: 10rem;
 }
 
 .home .home-title {
     max-width: 44rem;
+    flex: 1 1 100%;
+    text-align: center;
+}
+
+.home .profile-image {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.home .profile-image img {
+    max-width: 100%;
+    height: auto;
 }
 
 .home-title h1 {
@@ -109,8 +127,15 @@ section {
     margin: 1rem 1rem 1rem 0;
 }
 
-.home-title .social-media a{
-    display: inline-flex;
+.home-title .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem 1.5rem 3rem 0;
+}
+
+.home-title .social-media a {
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 4rem;
@@ -121,11 +146,11 @@ section {
     box-shadow: 0 .2rem .5rem var(--shadow-color);
     font-size: 2rem;
     color: var(--main-color);
-    margin: 2.5rem 1.5rem 3rem 0;
+    margin-right: 1.5rem;
     transition: .5s ease;
 }
 
-.home-title .social-media a:hover{
+.home-title .social-media a:hover {
     background: var(--main-color);
     color: var(--white-color);
 }
@@ -150,7 +175,6 @@ span:hover {
     color: var(--main-color);
     border-color: var(--main-color);
 }
-
 
 .dropdown {
     position: relative;
@@ -182,86 +206,46 @@ span:hover {
     background-color: #f1f1f1;
 }
 
-.home .skills-container{
-    position: absolute;
-    top: 50%;
-    right: 0%;
-    transform: translateY(-45%);
-    width: 768px;
-    height: 768px;
-    overflow: hidden;
-    pointer-events: none;
+.about {
+    background: var(--main-color);
+    color: var(--white-color);
 }
 
-.home .skills-container .skills-box {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 769px;
-    height: 768px;
-    border-radius: 50%;
+.about h3 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.about p {
+    margin: 4rem 0 2rem 0;
+    font-size: 2rem;
+}
+
+.skills-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 8rem;
+}
+
+.skills-box {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
 
-.home .skills-box .skills {
-    position: absolute;
-    left: 0;
+.skills {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    color: var(--main-color);
-    transform: rotate(calc(360deg / 4 * var(--i)));
-    transform-origin: 384px;
-    background: var(--bg-color);
-    padding: 13px 0;
+    align-items: center;
+    margin: 20px;
 }
 
-.home .skills-box .skills:nth-child(1) i {
-    margin-right: 15px;
-}
-
-.home .skills-box .skills:nth-child(2),
-.home .skills-box .skills:nth-child(4){
-    padding-bottom: 20px;
-}
-
-.home .skills i {
-    font-size: 3.8rem;
-}
-
-.home .skills h3 {
-    font-size: 3.2rem;
-    line-height: 1;
-    font-weight: 600;
-}
-
-.home .skills-box .circle{
-    width: 560px;
-    height: 560px;
-    border: 3px solid var(--main-color);
-    border-radius: 50%;
-}
-
-.home .skills-container .overlay {
-    position:absolute;
-    top: 0;
-    right: 0;
-    width: 0;
-    height: 0;
-    border-top: 384px solid var(--main-color);
-    border-right: 384px solid var(--main-color);
-    border-bottom: 384px solid var(--main-color);
-    border-left: 384px solid transparent;
-    
-}
-
-.home-img img{
-    position: absolute;
-    padding-bottom: 12rem;
-    padding-right: 1rem;
-    bottom: 3px;
-    right: 1px;
-    pointer-events: none;
+.skills h4 {
+    margin-top: 10px;
+    font-size: 1.5rem;
 }
