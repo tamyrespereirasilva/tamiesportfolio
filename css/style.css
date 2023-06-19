@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +17,7 @@
 :root {
     --bg-color: #fdfdfd;
     --text-color: #333;
-    --main-color: #ff8741;
+    --main-color: #f56b1c;
     --white-color: #fdfdfd;
     --shadow-color: rgba(0, 0, 0, .2);
 }
@@ -216,8 +218,7 @@ span:hover {
 
 
 .about {
-    background: var(--main-color);
-    color: var(--white-color);
+    background: #5fd8ed6d;
     padding-top:20rem;
 }
 
@@ -293,5 +294,36 @@ span:hover {
     padding: 4rem;
     box-sizing: border-box;
     font-size: 1.5rem;
+}
+
+.academic {
+    background: #5fd8ed6d;
+    padding-top:20rem;
+    text-align: center;
+    margin-top: 2rem;
+
+}
+
+  
+.academic-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.academic h3 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
 }
 
