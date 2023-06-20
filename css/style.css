@@ -15,11 +15,11 @@
 }
 
 :root {
-    --bg-color: #fdfdfd;
-    --text-color: #333;
-    --main-color: #f56b1c;
+    --bg-color: rgb(5, 3, 27);
+    --text-color: #ffffff;
+    --main-color: #000000;
     --white-color: #fdfdfd;
-    --shadow-color: rgba(0, 0, 0, .2);
+    --shadow-color: rgb(94, 71, 245);
 }
 
 html {
@@ -38,43 +38,27 @@ body {
     left: 0;
     width: 100%;
     padding: 2rem 7%;
-    background: #f1f1f199;
+    background: rgb(9, 0, 66);
     display: flex;
     align-items: center;
     z-index: 100;
+    box-shadow: 0 0 300px var(--shadow-color);
 }
 
 .logo-nome {
     font-size: 2rem;
-    color: var(--main-color);
+    color: var(--white-color);
     font-weight: 600;
-    cursor: default;
+    cursor: pointer;
     margin-right: auto;
 }
 
 .navbar a {
     font-size: 1.7rem;
     position: relative;
-    color: var(--main-color);
+    color: var(--white-color);
     font-weight: 500;
     margin-right: 3rem;
-}
-
-.navbar a.active::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: -6px;
-    width: 100%;
-    height: .2rem;
-    background: var(--white-color);
-}
-
-#darkMode-icon {
-    cursor: pointer;
-    color: var(--main-color);
-    font-size: 2.4rem;
 }
 
 section {
@@ -95,17 +79,6 @@ section {
     max-width: 44rem;
     flex: 1 1 100%;
     text-align: center;
-}
-
-.home .profile-image {
-    flex: 1 1 100%;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.home .profile-image img {
-    max-width: 100%;
-    height: auto;
 }
 
 .home-title h1 {
@@ -144,37 +117,38 @@ section {
     align-items: center;
     width: 4rem;
     height: 4rem;
-    background: transparent;
+    background: var(--white-color);
     border: .2rem solid var(--main-color);
     border-radius: 50%;
-    box-shadow: 0 .2rem .5rem var(--shadow-color);
+    box-shadow: 0 .4rem .5rem var(--shadow-color);
     font-size: 2rem;
     color: var(--main-color);
     margin: 0.5rem;
     transition: 0.5s ease;
 }
 
+
 .home-title .social-media a:hover {
-    background: var(--main-color);
+    background: var(--main-color); 
     color: var(--white-color);
 }
 
-span {
+.dropdown span {
     display: inline-block;
     padding: 1.2rem 2.8rem;
-    background: var(--main-color);
+    background: var(--white-color);
     border: .2rem solid var(--main-color);
     border-radius: .6rem;
-    box-shadow: 0 .2rem .5rem var(--shadow-color);
+    box-shadow: 0 .4rem .5rem var(--shadow-color);
     font-size: 1.4rem;
-    color: var(--white-color);
+    color: var(--main-color);
     letter-spacing: .1rem;
     font-weight: 600;
     border: .2rem solid transparent;
     transition: 1s ease;
 }
 
-span:hover {
+.dropdown span:hover {
     background: transparent;
     color: var(--main-color);
     border-color: var(--main-color);
@@ -218,8 +192,10 @@ span:hover {
 
 
 .about {
-    background: #5fd8ed6d;
+    background:var(--white-color);
     padding-top:20rem;
+    border-radius: 10px;
+    color: var(--main-color);
 }
 
 .about h3 {
@@ -251,7 +227,7 @@ span:hover {
 
 .titulos {
     margin-top: 10rem;
-    color: var(--main-color);
+    color: var(--white-color);
     font-size:35px;
 }
 
@@ -264,7 +240,7 @@ span:hover {
 
 .skills h4 {
     margin-top: 2rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .hobbies-container {
@@ -276,7 +252,7 @@ span:hover {
 }
 
 .hobbies-container h4 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-top: 10px; 
 }
 
@@ -297,11 +273,12 @@ span:hover {
 }
 
 .academic {
-    background: #5fd8ed6d;
+    background: var(--white-color);
     padding-top:20rem;
     text-align: center;
     margin-top: 2rem;
-
+    border-radius: 10px;
+    color: var(--main-color);
 }
 
   
@@ -314,16 +291,46 @@ span:hover {
     margin-top: 2rem;
 }
 
+.academic-box img{
+    border-radius: 12px;
+    width: 350px;
+    height: 250px;
+}
+
 .academic h3 {
     text-align: center;
     font-size: 35px;
 }
 
 .experience {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
+.experience-box img {
+    border-radius: 12px;
+    width: 500px;
+    height: 250px;
+}
+
+
+.experience-box button {
+    display: inline-block;
+    padding: 1.0rem 2.0rem;
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    box-shadow: 0 .2rem .5rem var(--shadow-color);
+    font-size: 1.4rem;
+    color: var(--white-color);
+    letter-spacing: .1rem;
+    font-weight: 500;
+    border: .2rem solid transparent;
+    transition: 1s ease;
+}
+
+.experience-box button:hover {
+    background: transparent;
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+  
