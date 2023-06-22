@@ -398,15 +398,17 @@ section {
 
 .contact-box p{
     text-align: justify;
+    font-size: 2rem;
 }
 
 .general-box form{
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 6px;
     border-radius: .6rem;
     width: 50%;
     align-items: center;
+  
 }
 
 .general-box input, textarea{
@@ -414,11 +416,16 @@ section {
     height: 35px;
     resize: none;
     border-radius: .6rem;
+    padding-left: 5px;
+}
+
+
+.general-box label {
+   font-size: 14px;
 }
 
 .general-box #button {
-    width: 15vw;
-    margin: 0 auto;
+    width: 8vw;
 }
 
 .general-box textarea{
