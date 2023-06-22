@@ -271,7 +271,6 @@ section {
 }
 
 .hobbies-item {
-    flex-basis: calc(33.33% - 20px);
     margin: 10px;
     padding: 4rem;
     box-sizing: border-box;
