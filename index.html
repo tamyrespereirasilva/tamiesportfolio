@@ -272,7 +272,8 @@
                 </p>
             </div>
 
-            <form id="form">
+            <form id="form" action="https://api.staticforms.xyz/submit" method="post">
+                <input type="hidden" name="accessKey" value="43f58899-6a3e-4ad4-b627-8b1e628f5345" aria-label="input da api">
 
                 <label style="padding-right: 400px;" for="nome">Nome</label>
                 <input type="text" id="nome" placeholder="Não pode ficar vazio">
@@ -286,6 +287,7 @@
                 <label style="padding-right: 370px;" for="Mensagem">Mensagem</label>
                 <textarea rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Não pode ficar vazio"></textarea>
 
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/index.html">
                 <button type="submit" class="button" id="button">Enviar</button>
 
             </form>
