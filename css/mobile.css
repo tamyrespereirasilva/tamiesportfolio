@@ -32,11 +32,6 @@
         margin-right: 0;
         font-size: 1.8rem;
     }
-
-    .dropdown-container {
-        display: none;
-    }
-
     .home-title h1 {
         font-size: 3rem;
     }
@@ -68,6 +63,22 @@
         margin: 0.5rem;
     }
 
+    .dropdown span {
+        display: inline-block;
+        padding: 1rem 1rem;
+        background: var(--white-color);
+        border: .2rem solid var(--main-color);
+        border-radius: .6rem;
+        box-shadow: 0 .4rem .5rem var(--shadow-color);
+        font-size: 1rem;
+        color: var(--main-color);
+        letter-spacing: .1rem;
+        font-weight: 600;
+        border: .2rem solid transparent;
+        transition: 1s ease;
+    }
+    
+
     .home-img {
         height: 35%;
     }
@@ -75,7 +86,7 @@
     .home-img img{
         display: flex;
         align-items: center;
-        width: 200px;
+        width: 100px;
         
     }
 
