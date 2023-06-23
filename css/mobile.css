@@ -16,20 +16,21 @@
 }
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 414px) {
     .home .home-title {
         padding-top: 0;
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 414px) {
+    
     .navbar {
         display: none;
     }
 
     .logo-nome {
         margin-right: 0;
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
 
     .dropdown-container {
@@ -67,28 +68,59 @@
         margin: 0.5rem;
     }
 
+    .home-img {
+        height: 35%;
+    }
+
+    .home-img img{
+        display: flex;
+        align-items: center;
+        width: 200px;
+        
+    }
+
+    .titulos {
+        margin-top: 5rem;
+        color: var(--white-color);
+        font-size: 2rem;
+        text-align: center;
+    
+    }
+    
     .about {
-        padding-top: 10rem;
+        height: auto;
+        margin: auto;
+        padding: 2rem;
     }
-
+    
     .about h3 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
-    .about p {
-        margin: 3rem 0 1.5rem 0;
-        font-size: 1.5rem;
-    }
 
-    .skills-container {
-       height: auto; 
-    }
-
-    .skills h4 {
-        font-size: 1.5rem;
+    #skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding:10px;
     }
 
     .skills-box {
+        display: flex;
+        justify-content: center;
+    }
+
+    .skills-box div {
+        padding: 2px;
+    }
+
+    .skills img {
+        text-align: center;
+        height: 20vw;
+    }
+
+    .hobbies-container {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -96,18 +128,12 @@
 
     .hobbies-box {
         height: auto;
+        padding-bottom: 5rem;
     }
-
-    .hobbies-container h4 {
-        font-size: 1.5rem;
-        margin-top: 5px; 
-    }
-
  
-    .hobbies-item {
+    .hobbies-item{
         padding: 0;
         font-size: 1.3rem;
-        height: auto;
     }
 
     .academic {
@@ -120,7 +146,12 @@
     }
 
     .academic h3 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+
+    .academic img {
+        width: 200px;
+        height: 200px;
     }
 
     .experience {
@@ -128,17 +159,17 @@
     }
 
     .experience-box img {
-        width: 80vw;
-        height: 40vh;
+        width: 300px;
+        height: 200px;
     }
 
     .experience-box span {
-        flex-direction: column;
+        display: block;
         gap: 10px;
     }
 
     .experience-box .button {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .experience-container {
@@ -168,7 +199,7 @@
 
     .contact-container {
         flex-direction: column;
-        gap: 30px;
+        gap: 25px;
         margin: 3rem 0 1.5rem 0;
     }    
 
@@ -189,11 +220,13 @@
 
     .general-box input, textarea{
         width: 80%;
-        height: 35px;
+        height: 30px;
     }
 
     .general-box label {
-       font-size: 14px;
+       font-size: 1rem;
+       padding-left: 120px;
+       text-align: center;
     }
 
     .general-box #button {
@@ -205,13 +238,12 @@
     }
 
     .contact .button{
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
 
     .footer {
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
         padding: 2rem 7% 4rem 7%;
-        font-size: 1.3rem;
     }
 }

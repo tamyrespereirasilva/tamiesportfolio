@@ -22,7 +22,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
     .navbar {
         display: none;
     }
@@ -67,8 +67,19 @@
         margin: 0.5rem;
     }
 
+    .home {
+        height: auto;
+    }
+
+    .titulos {
+        color: var(--white-color);
+        font-size: 2.5rem;
+        text-align: center;
+    
+    }
+
     .about {
-        padding-top: 10rem;
+        height: auto;
     }
 
     .about h3 {
@@ -81,8 +92,9 @@
     }
 
     .skills-container {
-       height: auto; 
+        height: auto; 
     }
+    
 
     .skills h4 {
         font-size: 1.5rem;
@@ -90,21 +102,24 @@
 
     .skills-box {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+    }
+
+    .hobbies-box {
+        
     }
 
     .hobbies-box {
         height: auto;
+        margin: auto;
     }
 
     .hobbies-container h4 {
         font-size: 1.5rem;
-        margin-top: 5px; 
     }
 
  
     .hobbies-item {
+        margin: auto;
         padding: 0;
         font-size: 1.3rem;
         height: auto;
@@ -129,11 +144,11 @@
 
     .experience-box img {
         width: 80vw;
-        height: 40vh;
+        height: 30vh;
     }
 
     .experience-box span {
-        flex-direction: column;
+        flex-direction: block;
         gap: 10px;
     }
 
